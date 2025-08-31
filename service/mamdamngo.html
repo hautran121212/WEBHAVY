@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dịch Vụ Mâm Dạm Ngõ - Hà Vy Wedding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        .font-script {
+            font-family: 'Great Vibes', cursive;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .text-pink-600 {
+            color: #db2777;
+        }
+
+        .bg-pink-600 {
+            background-color: #db2777;
+        }
+
+        .border-pink-600 {
+            border-color: #db2777;
+        }
+
+        .hover\:bg-pink-700:hover {
+            background-color: #be185d;
+        }
+
+        .breadcrumb a {
+            color: #db2777;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-pink-50">
+    <header class="bg-white shadow-md">
+        <div href="index.html" class="container mx-auto px-4 py-2 flex justify-center items-center space-x-4">
+            <!-- Chữ script bên trái -->
+            <span class="font-script text-2xl text-pink-400">Hà Vy Weddingdecor</span>
+
+            <!-- Logo ở giữa -->
+            <img src="/img/logo.jpg" alt="Hà Vy Wedding Logo" class="h-10 rounded-full
+                mask-radial-[100%_100%]
+                mask-radial-from-100%
+                mask-radial-to-0%" />
+        </div>
+
+        <!-- Menu Off-canvas -->
+        <button id="btnMenu" class="p-2 text-pink-600 absolute top-4 right-4 z-50">
+            <span class="material-icons">menu</span>
+        </button>
+
+        <aside id="offcanvas"
+            class="fixed top-0 right-0 h-full w-64 bg-pink-100 shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <button id="btnClose" class="absolute top-2 right-2 text-gray-600 text-3xl p-2">×</button>
+            <nav class="flex flex-col p-4 space-y-4 pt-12">
+                <a href="/index.html" class="text-gray-800 hover:text-pink-600">Trang chủ</a>
+                 <div class="flex flex-col">
+    <button id="btnService"
+            class="flex items-center justify-between text-gray-800 hover:text-pink-600">
+      <span>Dịch vụ</span>
+      <span id="iconService" class="transform transition-transform duration-300">
+        <!-- Mũi tên trỏ xuống mặc định -->
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </span>
+    </button>
+    <div id="submenuService" class="flex flex-col space-y-2 mt-2 pl-4 hidden">
+      <a href="/service/trangtrigiatien.html" class="text-gray-800 hover:text-pink-600">Trang trí gia tiên</a>
+      <a href="/service/trangtrinhahang.html" class="text-gray-800 hover:text-pink-600">Trang trí nhà hàng</a>
+      <a href="/service/trangtrisinhnhat.html" class="text-gray-800 hover:text-pink-600">Trang trí sinh nhật</a>
+      <a href="/service/mamdamngo.html" class="text-gray-800 hover:text-pink-600">Trang trí mâm dạm ngõ</a>
+      <a href="/service/mamqua.html" class="text-gray-800 hover:text-pink-600">Trang trí mâm quả</a>
+      <a href="/service/xeruocdau.html" class="text-gray-800 hover:text-pink-600">Trang trí xe hoa</a>
+      <a href="/service/rapcuoibetrap.html" class="text-gray-800 hover:text-pink-600">Rạp cưới - bê tráp</a>
+      <a href="/service/chupanhcuoi.html" class="text-gray-800 hover:text-pink-600">Chụp ảnh cưới</a>
+    </div>
+  </div>
+                <script>
+  document.getElementById('btnService').addEventListener('click', () => {
+    const submenu = document.getElementById('submenuService');
+    const icon = document.getElementById('iconService');
+
+    submenu.classList.toggle('hidden');              // Ẩn/hiện submenu
+    icon.classList.toggle('rotate-180');              // Xoay icon mũi tên
+  });
+</script>
+                <a href="/contact.html" class="text-gray-800 hover:text-pink-600">Liên hệ</a>
+                <a href="/introduce.html" class="text-gray-800 hover:text-pink-600">Giới thiệu</a>
+            </nav>
+        </aside>
+
+
+        <script>
+            const btnMenu = document.getElementById('btnMenu');
+            const btnClose = document.getElementById('btnClose');
+            const offcanvas = document.getElementById('offcanvas');
+
+            btnMenu.addEventListener('click', () => {
+                offcanvas.classList.toggle('translate-x-full');
+            });
+
+            btnClose.addEventListener('click', () => {
+                offcanvas.classList.add('translate-x-full');
+            });
+        </script>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <nav class="text-sm mb-4 breadcrumb">
+            <a href="/index.html">Trang chủ</a>
+            <span class="mx-2">/</span>
+            <a href="#">Dịch vụ</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-500">Mâm Dạm Ngõ</span>
+        </nav>
+        <section>
+            <img alt="Bàn thờ gia tiên được trang trí lộng lẫy cho đám cưới" class="w-full rounded-lg mb-6"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfs0tLSMBJNrBpZht9vVGH5A0l-InM0Uu78MckoB3IXsUw9YoZACRQgx6_HXjPBgikzLb_IONYsqvfkSsYqVeVVgme7eA42YSkNub_QjqbsZlt8engkabaqBJs4SCK85W_DgAKG3yFxc8AmrckxNv0ZbmZiFH4vxP4sztip5DWArs8CZ9V8UltTwdlv3f4qWEr3m2JRCiKnARxujn5yyb_uZzqvaqLmGWizz7-IVTcE4e4o6yUUsbNYZDOOrE7I6yWxovXBupF9xCo" />
+            <h1 class="text-2xl font-bold text-pink-800 mb-2">DỊCH VỤ TRANG TRÍ MÂM DẠM NGÕ</h1>
+            <p class="text-gray-600 mb-6">
+                Mang đến vẻ đẹp tinh tế và trang trọng cho nghi lễ dạm ngõ, dịch vụ trang trí mâm quả là sự kết hợp hoàn
+                hảo giữa truyền thống và hiện đại. Từng mâm lễ được chăm chút tỉ mỉ, từ cách
+                sắp xếp hài hòa đến màu sắc đồng bộ, tạo nên tổng thể ấn tượng và đầy ý nghĩa. Với nhiều phong cách
+                trang trí đa dạng, chúng tôi sẽ giúp bạn thể hiện sự trân trọng và lòng thành kính với gia đình hai bên,
+                đồng thời ghi dấu một khởi đầu đầy may mắn cho đôi uyên ương. Hãy để chúng tôi cùng bạn tạo nên khoảnh
+                khắc đáng nhớ ngay từ những bước đầu tiên.
+            </p>
+            <div class="text-center mb-6">
+                <a class="inline-flex items-center bg-pink-600 text-white font-bold py-2 px-4 rounded-full hover:bg-pink-700 transition duration-300"
+                    href="#">
+                    <span class="material-icons mr-2">phone</span>
+                    NHẬN TƯ VẤN MIỄN PHÍ
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <img alt="Mẫu trang trí gia tiên 01" class="w-full h-auto object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3n08QJ0zN7S3T3x5T0Y_R7W7H9Q4B2R8C2P9Z0Z7T4J5D6V6W3Y6Y2B5N8T1P5Z2H9W9U4Y0T1C2V0B7W8M6X1J5N9R3S1O4P2R7S5Y1" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-center mb-2">MẪU LUX 01</h3>
+                        <a class="block w-full text-center bg-pink-300 text-gray-800 py-2 rounded hover:bg-pink-400 transition duration-300"
+                            href="#">XEM CHI TIẾT</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <img alt="Mẫu trang trí gia tiên 02" class="w-full h-auto object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb2P0G2H8Q9R3J6N1F4L7S8T5W0Z5V9Y1B3A0G4I6U8E9O2Q3R7P5T6S1M4X9N7Y2Z3V8C5B1D0E6F9G3H1I7J0K" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-center mb-2">MẪU LUX 02</h3>
+                        <a class="block w-full text-center bg-pink-300 text-gray-800 py-2 rounded hover:bg-pink-400 transition duration-300"
+                            href="#">XEM CHI TIẾT</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <img alt="Mẫu trang trí gia tiên 03" class="w-full h-auto object-cover"
+                        src="/img/category/service/sv (31).jpg" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-center mb-2">MẪU LUX 03</h3>
+                        <a class="block w-full text-center bg-pink-300 text-gray-800 py-2 rounded hover:bg-pink-400 transition duration-300"
+                            href="#">XEM CHI TIẾT</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <img alt="Mẫu trang trí gia tiên 04" class="w-full h-auto object-cover"
+                        src="/img/category/service/sv (31).jpg" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-center mb-2">MẪU LUX 04</h3>
+                        <a class="block w-full text-center bg-pink-300 text-gray-800 py-2 rounded hover:bg-pink-400 transition duration-300"
+                            href="#">XEM CHI TIẾT</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <img alt="Mẫu trang trí gia tiên 05" class="w-full h-auto object-cover"
+                        src="/img/category/service/sv (31).jpg" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-center mb-2">MẪU LUX 05</h3>
+                        <a class="block w-full text-center bg-pink-300 text-gray-800 py-2 rounded hover:bg-pink-400 transition duration-300"
+                            href="#">XEM CHI TIẾT</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <img alt="Mẫu trang trí gia tiên 06" class="w-full h-auto object-cover"
+                        src="/img/category/service/sv (31).jpg" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-center mb-2">MẪU LUX 06</h3>
+                        <a class="block w-full text-center bg-pink-300 text-gray-800 py-2 rounded hover:bg-pink-400 transition duration-300"
+                            href="#">XEM CHI TIẾT</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <img alt="Mẫu trang trí gia tiên 01 01" class="w-full h-auto object-cover"
+                        src="/img/category/service/sv (31).jpg" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-center mb-2">MẪU LUX 01.01</h3>
+                        <a class="block w-full text-center bg-pink-300 text-gray-800 py-2 rounded hover:bg-pink-400 transition duration-300"
+                            href="#">XEM CHI TIẾT</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <img alt="Mẫu trang trí gia tiên 01 02" class="w-full h-auto object-cover"
+                        src="/img/category/service/sv (31).jpg" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-center mb-2">MẪU LUX 01.02</h3>
+                        <a class="block w-full text-center bg-pink-300 text-gray-800 py-2 rounded hover:bg-pink-400 transition duration-300"
+                            href="#">XEM CHI TIẾT</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-white pt-16 pb-8">
+        <div class="container mx-auto px-4 text-center">
+            <img alt="Logo Hà Vy Wedding" class="h-20 mx-auto mb-4" src="/img/logo.jpg" />
+            <h3 class="text-2xl font-bold text-pink-800 mb-4">Những người kể chuyện tình</h3>
+            <div class="text-gray-600 space-y-2 mb-8">
+                <p class="flex items-center justify-center"><span
+                        class="material-icons text-pink-600 mr-2">location_on</span>136 Nguyễn Văn Cừ, Pleiku, Gia Lai
+                </p>
+                <p class="flex items-center justify-center"><span
+                        class="material-icons text-pink-600 mr-2">email</span>havyweddingdecor@gmail.com</p>
+                <p class="flex items-center justify-center"><span
+                        class="material-icons text-pink-600 mr-2">phone</span>0367275002 (Ms. Hà)</p>
+            </div>
+            <div class="flex justify-center space-x-4 mb-8">
+                <a class="text-pink-600" href="https://www.facebook.com/caipirafelizz?locale=vi_VN"><img
+                        alt="Facebook icon" class="h-8" src="/img/icon/facebook.jpg" /></a>
+                <a class="text-pink-600" href="https://zalo.me/0367275002"><img alt="Zalo icon" class="h-8"
+                        src="/img/icon/zalo.jpg" /></a>
+                <a class="text-pink-600" href="https://m.me/caipirafelizz
+"><img alt="Messenger icon" class="h-8" src="/img/icon/messenger.jpg" /></a>
+            </div>
+            <div class="mb-8">
+                <a class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full inline-flex items-center transition duration-300"
+                    href="#">
+                    <span class="material-icons mr-2">phone</span>
+                    Gọi Điện Thoại
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm">Design by Hà Vy Wedding</p>
+        </div>
+    </footer>
+    <div class="fixed bottom-4 right-4 flex flex-col space-y-2">
+        <a href="https://zalo.me/0367275002" class="bg-white p-3 rounded-full shadow-lg">
+            <img alt="Zalo icon" src="/img/icon/zalo.jpg" class="h-12 w-12 rounded-full object-cover" />
+        </a>
+        <a href="https://m.me/caipirafelizz
+" class="bg-white p-3 rounded-full shadow-lg">
+            <img alt="Messenger icon" src="/img/icon/messenger.jpg" class="h-12 w-12 rounded-full object-cover" />
+        </a>
+    </div>
+</body>
+
+</html>

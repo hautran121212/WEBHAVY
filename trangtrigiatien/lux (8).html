@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mẫu Lux 08 - Hà Vy Wedding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        .font-script {
+            font-family: 'Great Vibes', cursive;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FEF2F2;
+        }
+
+        .text-primary {
+            color: #C53030;
+        }
+
+        .bg-primary {
+            background-color: #C53030;
+        }
+
+        .border-primary {
+            border-color: #C53030;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body>
+<header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-2 flex justify-center items-center space-x-4">
+            <!-- Chữ script bên trái -->
+            <span href="index.html" class="font-script text-2xl text-pink-400">Hà Vy Weddingdecor</span>
+
+            <!-- Logo ở giữa -->
+            <img href="index.html" src="/img/logo.jpg" alt="Hà Vy Wedding Logo" class="h-10 rounded-full
+                mask-radial-[100%_100%]
+                mask-radial-from-100%
+                mask-radial-to-0%" />
+        </div>
+
+        <!-- Menu Off-canvas -->
+        <button id="btnMenu" class="p-2 text-pink-600 absolute top-4 right-4 z-50">
+            <span class="material-icons">menu</span>
+        </button>
+
+        <aside id="offcanvas"
+            class="fixed top-0 right-0 h-full w-64 bg-pink-100 shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <button id="btnClose" class="absolute top-2 right-2 text-gray-600 text-3xl p-2">×</button>
+            <nav class="flex flex-col p-4 space-y-4 pt-12">
+                <a href="/index.html" class="text-gray-800 hover:text-pink-600">Trang chủ</a>
+                 <div class="flex flex-col">
+    <button id="btnService"
+            class="flex items-center justify-between text-gray-800 hover:text-pink-600">
+      <span>Dịch vụ</span>
+      <span id="iconService" class="transform transition-transform duration-300">
+        <!-- Mũi tên trỏ xuống mặc định -->
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </span>
+    </button>
+    <div id="submenuService" class="flex flex-col space-y-2 mt-2 pl-4 hidden">
+      <a href="/service/trangtrigiatien.html" class="text-gray-800 hover:text-pink-600">Trang trí gia tiên</a>
+      <a href="/service/trangtrinhahang.html" class="text-gray-800 hover:text-pink-600">Trang trí nhà hàng</a>
+      <a href="/service/trangtrisinhnhat.html" class="text-gray-800 hover:text-pink-600">Trang trí sinh nhật</a>
+      <a href="/service/mamdamngo.html" class="text-gray-800 hover:text-pink-600">Trang trí mâm dạm ngõ</a>
+      <a href="/service/mamqua.html" class="text-gray-800 hover:text-pink-600">Trang trí mâm quả</a>
+      <a href="/service/xeruocdau.html" class="text-gray-800 hover:text-pink-600">Trang trí xe hoa</a>
+      <a href="/service/rapcuoibetrap.html" class="text-gray-800 hover:text-pink-600">Rạp cưới - bê tráp</a>
+      <a href="/service/chupanhcuoi.html" class="text-gray-800 hover:text-pink-600">Chụp ảnh cưới</a>
+    </div>
+  </div>
+                <script>
+  document.getElementById('btnService').addEventListener('click', () => {
+    const submenu = document.getElementById('submenuService');
+    const icon = document.getElementById('iconService');
+
+    submenu.classList.toggle('hidden');              // Ẩn/hiện submenu
+    icon.classList.toggle('rotate-180');              // Xoay icon mũi tên
+  });
+</script>
+                <a href="/contact.html" class="text-gray-800 hover:text-pink-600">Liên hệ</a>
+                <a href="/introduce.html" class="text-gray-800 hover:text-pink-600">Giới thiệu</a>
+            </nav>
+        </aside>
+
+
+        <script>
+            const btnMenu = document.getElementById('btnMenu');
+            const btnClose = document.getElementById('btnClose');
+            const offcanvas = document.getElementById('offcanvas');
+
+            btnMenu.addEventListener('click', () => {
+                offcanvas.classList.toggle('translate-x-full');
+            });
+
+            btnClose.addEventListener('click', () => {
+                offcanvas.classList.add('translate-x-full');
+            });
+        </script>
+    </header>
+
+    <main class="bg-white">
+        <div class="container mx-auto px-4 py-4">
+            <div class="text-sm text-gray-500 mb-4">
+                <a class="hover:text-primary" href="#">Trang chủ</a> / <span>Trang trí gia tiên</span>
+            </div>
+            <h1 class="text-2xl font-bold text-gray-800 mb-4">MẪU LUX 01</h1>
+            <div class="mb-4">
+                <img id="mainImage" alt="Trang trí gia tiên mẫu Lux 08" class="w-full h-auto rounded-lg shadow-md"
+                    src="/img/category/service/sv (32).jpg" />
+            </div>
+            <div class="grid grid-cols-4 gap-2 mb-6">
+                <img class="thumbnail w-full h-auto rounded-lg cursor-pointer"
+                    src="/img/category/service/sv (32).jpg" alt="Chi tiết 1" />
+                <img class="thumbnail w-full h-auto rounded-lg cursor-pointer" src="/img/category/service/sv (33).jpg"
+                    alt="Chi tiết 2" />
+            </div>
+            <script>
+                // Chọn tất cả thẻ ảnh nhỏ
+                const thumbnails = document.querySelectorAll('.thumbnail');
+                const mainImage = document.getElementById('mainImage');
+
+                thumbnails.forEach(img => {
+                    img.addEventListener('click', () => {
+                        // Khi click, đổi src ảnh lớn thành src của thumbnail
+                        mainImage.src = img.src;
+                        // Optional: nếu có alt muốn hiển thị thì có thể cập nhật alt/title tương ứng
+                        mainImage.alt = img.alt;
+                    });
+                });
+            </script>
+<div class="grid grid-cols-2 gap-4 mb-6 text-center text-sm">
+                <div class="bg-gray-100 p-3 rounded-lg">
+                    <p class="font-semibold">Hà Phạm:</p>
+                    <div class="flex items-center justify-center space-x-1 text-primary">
+                        <img alt="Phone icon" class="h-4 w-4"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJsTHk1gFUrc7cHEjrlkdueqdz8uLnHGsA_m0DPyRqAhEu4UIRRc3tCuMrvMauXlWbWsNPkUM_MP1MUnwLB8wdiNZKkK-3fYvm071Wu0rXDCrm6JGEMrA2vpDwjZoTZOF5jLuQ_uA8waTccIle7ZMUiJ4lFBxoOpp1rdm_zDmeoi9p1HP_gJXC3vFq5wQxM5c_YDfATHOGbqk6pNciOZcsXIvTJCnD4sx7s_X3_7h0-CTjbRM8M0Z_yGZO-nzVSBpK7zKcIxzaLwgP" />
+                        <a class="font-bold" href="https://zalo.me/0367275002">Zalo: 0367275002</a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-3 rounded-lg">
+                    <p class="font-semibold">Trần Kỳ:</p>
+                    <div class="flex items-center justify-center space-x-1 text-primary">
+                        <img alt="Zalo icon" class="h-4 w-4"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvr_xWSKw3mJVbHZY8J7cQbi0U_yZa5n-4_5mfmBmzFJ0XH9TGz0Sw2saRUfpqKin4hNJy8js_WprFbYarFeUY_l-nzqMHlmZLSDgpfMVPmCA-JfWAsgcoseaV-xFdbJTnSI1xZF3RwH0q_v0pVx1HEbcyFdsLuk7h4U4v038wevAO73aVWT4bK__tkbF9E9oHMBhAL73DOO0mJeaqazUQHVV2OsRdQozaH9mA5flFWjAzTTaMDUr06mQJ2sD6GFXvMKPdGay8bINp" />
+                        <a class="font-bold" href="https://zalo.me/0360742469">Zalo: 0360742469</a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center font-semibold mb-2">Yêu cầu Hà Vy Wedding gọi lại</p>
+            <div class="flex mb-6">
+                <input
+                    class="w-full px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="Số Điện Thoại" type="text" />
+                <button class="bg-primary text-white font-bold px-6 py-2 rounded-r-md">Gửi</button>
+            </div>
+            <h2 class="text-xl font-bold text-gray-800 mb-3">MẪU LUX 08</h2>
+            <div class="text-gray-600 text-sm space-y-2 mb-4">
+                <p>1. Phông chính có chữ Hỷ và tên cô dâu rể chữ 3D, trang trí hoa lụa cao cấp.</p>
+                <p>2. Bàn thờ họ, 12 ghế tiffany cao cấp</p>
+                <p>3. Bàn hai bên họ và 2 ấm trà cao cấp.</p>
+                <p>4. Trang trí bàn họ: Khăn trải bàn, hoa lụa để bàn cao cấp, kệ bánh kẹo 3 tầng, 12 ly, 12 chai nước
+                    suối sang trọng</p>
+                <p>5. Cổng hoa cùng tông, trang trí bằng hoa lụa cao cấp và một số phụ kiện trang trí khác</p>
+                <p class="font-bold">Lưu ý:</p>
+                <p>– Các hạng mục có thể thay đổi theo yêu cầu của khách hàng</p>
+                <p>– Khách hàng muốn trang trí bằng hoa tươi shop sẽ tư vấn báo giá lại sau.</p>
+                <p>– Miễn phí vận chuyển bán kính dưới 5km</p>
+                <p>– Hỗ trợ vận chuyển bán kính dưới 5km</p>
+            </div>
+            <div class="flex items-center mb-4">
+                <div class="flex text-yellow-400">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                </div>
+            </div>
+            <div class="text-2xl font-bold text-primary mb-6">
+                <span class="text-gray-500 line-through text-lg mr-2">5.500.000 đ</span>
+                5.000.000 đ
+            </div>
+            <button class="w-full bg-primary text-white font-bold py-3 rounded-lg mb-8">ĐẶT HÀNG</button>
+            <h3 class="text-lg font-bold text-center text-gray-800 mb-6">SẢN PHẨM TƯƠNG TỰ</h3>
+                    <div class="relative">
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="/trangtrigiatien/lux (2).html" class="block">
+                    <div class="text-center">
+                        <img alt="Mẫu Lux 07" class="w-full h-auto rounded-lg mb-2"
+                            src="/img/category/service/sv (35).jpg" />
+                        <p class="font-semibold">MẪU LUX 02</p>
+                        <p class="text-primary font-bold">7.000.000 đ</p>
+                    </div>
+                    </a>
+                    <a href="/trangtrigiatien/lux (1).html" class="block">
+                    <div class="text-center">
+                        <img alt="VIP 1" class="w-full h-auto rounded-lg mb-2"
+                            src="/img/category/service/sv (32).jpg" />
+                        <p class="font-semibold">Mẫu LUX 01</p>
+                        <p class="text-gray-500 line-through">12.000.000 đ</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+<footer class="bg-white pt-16 pb-8">
+        <div class="container mx-auto px-4 text-center">
+            <img alt="Logo Hà Vy Wedding" class="h-20 mx-auto mb-4" src="/img/logo.jpg" />
+            <h3 class="text-2xl font-bold text-pink-800 mb-4">Những người kể chuyện tình</h3>
+            <div class="text-gray-600 space-y-2 mb-8">
+                <p class="flex items-center justify-center"><span
+                        class="material-icons text-pink-600 mr-2">location_on</span>136 Nguyễn Văn Cừ, Pleiku, Gia Lai
+                </p>
+                <p class="flex items-center justify-center"><span
+                        class="material-icons text-pink-600 mr-2">email</span>havyweddingdecor@gmail.com</p>
+                <p class="flex items-center justify-center"><span
+                        class="material-icons text-pink-600 mr-2">phone</span>0367275002 (Ms. Hà)</p>
+            </div>
+            <div class="flex justify-center space-x-4 mb-8">
+                <a class="text-pink-600" href="https://www.facebook.com/caipirafelizz?locale=vi_VN"><img
+                        alt="Facebook icon" class="h-8" src="/img/icon/facebook.jpg" /></a>
+                <a class="text-pink-600" href="https://zalo.me/0367275002"><img alt="Zalo icon" class="h-8"
+                        src="/img/icon/zalo.jpg" /></a>
+                <a class="text-pink-600" href="https://m.me/caipirafelizz
+"><img alt="Messenger icon" class="h-8" src="/img/icon/messenger.jpg" /></a>
+            </div>
+            <div class="mb-8">
+                <a class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full inline-flex items-center transition duration-300"
+                    href="#">
+                    <span class="material-icons mr-2">phone</span>
+                    Gọi Điện Thoại
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm">Design by Hà Vy Wedding</p>
+        </div>
+    </footer>
+    <div class="fixed bottom-4 right-4 flex flex-col space-y-2">
+        <a href="https://zalo.me/0367275002" class="bg-white p-3 rounded-full shadow-lg">
+            <img alt="Zalo icon" src="/img/icon/zalo.jpg" class="h-12 w-12 rounded-full object-cover" />
+        </a>
+        <a href="https://m.me/caipirafelizz
+" class="bg-white p-3 rounded-full shadow-lg">
+            <img alt="Messenger icon" src="/img/icon/messenger.jpg" class="h-12 w-12 rounded-full object-cover" />
+        </a>
+    </div>
+</body>
+
+</html>

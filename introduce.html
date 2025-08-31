@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Giới thiệu - Hà Vy Wedding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        .font-script {
+            font-family: 'Great Vibes', cursive;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #4a5568;
+        }
+
+        .text-primary {
+            color: #ec4899;
+        }
+
+        .bg-primary {
+            background-color: #ec4899;
+        }
+
+        .bg-primary-dark {
+            background-color: #db2777;
+        }
+
+        .bg-secondary {
+            background-color: #f9a8d4;
+        }
+
+        .text-secondary {
+            color: #f9a8d4;
+        }
+
+        .border-primary {
+            border-color: #ec4899;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+            background-color: #fce7f3;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-pink-50">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-2 flex justify-center items-center space-x-4">
+            <!-- Chữ script bên trái -->
+            <span href="index.html" class="font-script text-2xl text-pink-400">Hà Vy Weddingdecor</span>
+
+            <!-- Logo ở giữa -->
+            <img href="index.html" src="img/logo.jpg" alt="Hà Vy Wedding Logo" class="h-10 rounded-full
+                mask-radial-[100%_100%]
+                mask-radial-from-100%
+                mask-radial-to-0%" />
+        </div>
+
+        <!-- Menu Off-canvas -->
+        <button id="btnMenu" class="p-2 text-pink-600 absolute top-4 right-4 z-50">
+            <span class="material-icons">menu</span>
+        </button>
+
+        <aside id="offcanvas"
+            class="fixed top-0 right-0 h-full w-64 bg-pink-100 shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <button id="btnClose" class="absolute top-2 right-2 text-gray-600 text-3xl p-2">×</button>
+            <nav class="flex flex-col p-4 space-y-4 pt-12">
+                <a href="/index.html" class="text-gray-800 hover:text-pink-600">Trang chủ</a>
+                 <div class="flex flex-col">
+    <button id="btnService"
+            class="flex items-center justify-between text-gray-800 hover:text-pink-600">
+      <span>Dịch vụ</span>
+      <span id="iconService" class="transform transition-transform duration-300">
+        <!-- Mũi tên trỏ xuống mặc định -->
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </span>
+    </button>
+    <div id="submenuService" class="flex flex-col space-y-2 mt-2 pl-4 hidden">
+      <a href="/service/trangtrigiatien.html" class="text-gray-800 hover:text-pink-600">Trang trí gia tiên</a>
+      <a href="/service/trangtrinhahang.html" class="text-gray-800 hover:text-pink-600">Trang trí nhà hàng</a>
+      <a href="/service/trangtrisinhnhat.html" class="text-gray-800 hover:text-pink-600">Trang trí sinh nhật</a>
+      <a href="/service/mamdamngo.html" class="text-gray-800 hover:text-pink-600">Trang trí mâm dạm ngõ</a>
+      <a href="/service/mamqua.html" class="text-gray-800 hover:text-pink-600">Trang trí mâm quả</a>
+      <a href="/service/xeruocdau.html" class="text-gray-800 hover:text-pink-600">Trang trí xe hoa</a>
+      <a href="/service/rapcuoibetrap.html" class="text-gray-800 hover:text-pink-600">Rạp cưới - bê tráp</a>
+      <a href="/service/chupanhcuoi.html" class="text-gray-800 hover:text-pink-600">Chụp ảnh cưới</a>
+    </div>
+  </div>
+                <script>
+  document.getElementById('btnService').addEventListener('click', () => {
+    const submenu = document.getElementById('submenuService');
+    const icon = document.getElementById('iconService');
+
+    submenu.classList.toggle('hidden');              // Ẩn/hiện submenu
+    icon.classList.toggle('rotate-180');              // Xoay icon mũi tên
+  });
+</script>
+                <a href="/contact.html" class="text-gray-800 hover:text-pink-600">Liên hệ</a>
+                <a href="/introduce.html" class="text-gray-800 hover:text-pink-600">Giới thiệu</a>
+            </nav>
+        </aside>
+
+        <script>
+            const btnMenu = document.getElementById('btnMenu');
+            const btnClose = document.getElementById('btnClose');
+            const offcanvas = document.getElementById('offcanvas');
+
+            btnMenu.addEventListener('click', () => {
+                offcanvas.classList.toggle('translate-x-full');
+            });
+
+            btnClose.addEventListener('click', () => {
+                offcanvas.classList.add('translate-x-full');
+            });
+        </script>
+    </header>
+
+    <main class="text-gray-700">
+        <section class="py-12 px-4 text-center">
+            <h2 class="text-sm font-semibold text-gray-500">Giới Thiệu</h2>
+            <h1 class="text-4xl font-bold text-primary mt-2">VỀ Hà Vy Weddingdecor</h1>
+            <h3 class="text-2xl font-semibold text-gray-800 mt-2">Với 10 năm kinh nghiệm trong lĩnh vực tổ chức lễ
+                cưới hỏi</h3>
+            <p class="mt-4 max-w-2xl mx-auto text-sm leading-relaxed">
+                Hà Vy Wedding tự tin là người bạn đồng hành đáng tin cậy của các cặp đôi trong ngày trọng đại.
+                Chúng tôi cung cấp các gói dịch vụ cưới hỏi trọn gói, từ lên ý tưởng, thiết kế không gian, trang trí lễ
+                đường, đến tổ chức tiệc cưới. Với đội ngũ chuyên gia giàu kinh nghiệm, chúng tôi luôn lắng nghe và thấu
+                hiểu mong muốn của bạn, mang đến giải pháp tối ưu và độc đáo nhất. Hà Vy Wedding cam kết sẽ biến
+                ngày bắt đầu của hôn nhân của bạn thành kỷ niệm đáng nhớ cho bạn và những người thân.
+            </p>
+            <a class="mt-6 inline-block bg-primary text-white font-bold py-3 px-8 rounded-full" href="contact.html">
+                Liên Hệ Ngay
+            </a>
+        </section>
+        <section class="px-4">
+            <div class="grid grid-cols-2 gap-2">
+                <img alt="Wedding setup" class="rounded-lg object-cover w-full h-full"
+                    src="img/anh2.png" />
+                <img alt="Happy couple" class="rounded-lg object-cover w-full h-full"
+                    src="img/anh1'.jpg" />
+            </div>
+            <img alt="Wedding arch" class="mt-2 rounded-lg object-cover w-full"
+                src="img/anh3.jpg" />
+        </section>
+        <section class="py-8 px-4">
+            <div class="grid grid-cols-2 gap-4 text-white">
+                <div class="bg-secondary p-6 rounded-lg text-center flex flex-col items-center">
+                    <span class="text-4xl font-bold">100+</span>
+                    <span class="mt-1 font-semibold">ĐƠN ĐÃ THỰC HIỆN</span>
+                    <div class="mt-3 w-8 h-8 rounded-full bg-white/30 flex items-center justify-center cursor-pointer">
+                        <span class="material-icons text-white text-lg">arrow_forward</span>
+                    </div>
+                </div>
+                <div class="bg-secondary p-6 rounded-lg text-center flex flex-col items-center">
+                    <span class="text-4xl font-bold">7+</span>
+                    <span class="mt-1 font-semibold">ĐA DỊCH VỤ</span>
+                    <div class="mt-3 w-8 h-8 rounded-full bg-white/30 flex items-center justify-center cursor-pointer">
+                        <span class="material-icons text-white text-lg">arrow_forward</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-8 px-4 text-center">
+            <h2 class="text-3xl font-bold text-primary">Chúng Tôi Cam Kết</h2>
+            <h3 class="text-3xl font-bold text-gray-800">Mang Đến Dịch Vụ Tiệc Cưới Hoàn Hảo</h3>
+        </section>
+        <section class="px-4 space-y-4">
+            <div class="bg-white/70 p-6 rounded-lg shadow-md">
+                <h4 class="text-xl font-bold text-primary mb-2">Khách Hàng Hài Lòng</h4>
+                <p class="text-sm leading-relaxed">Hà Vy Wedding luôn đặt sự hài lòng của khách hàng lên hàng
+                    đầu. Chúng tôi lắng nghe ý kiến, mong muốn và biến những ý tưởng đó thành hiện thực một cách tốt
+                    nhất. Sự tận tâm, chuyên nghiệp của đội ngũ nhân viên sẽ mang đến cho bạn những khoảnh khắc hạnh
+                    phúc trọn vẹn.</p>
+            </div>
+            <div class="bg-white/70 p-6 rounded-lg shadow-md">
+                <h4 class="text-xl font-bold text-primary mb-2">Chất Lượng Dịch Vụ</h4>
+                <p class="text-sm leading-relaxed">Chất lượng dịch vụ của Hà Vy Wedding đã được khẳng định qua
+                    nhiều năm hoạt động. Từ khâu lên ý tưởng, trang trí, đến tổ chức tiệc cưới, mọi thứ đều được thực
+                    hiện một cách tỉ mỉ, chuyên nghiệp. Chúng tôi cam kết mang đến những trải nghiệm tốt nhất cho
+                    khách hàng.</p>
+            </div>
+            <div class="bg-white/70 p-6 rounded-lg shadow-md">
+                <h4 class="text-xl font-bold text-primary mb-2">Nhân Viên Tận Tâm</h4>
+                <p class="text-sm leading-relaxed">Đội ngũ nhân viên của Hà Vy Wedding là những người trẻ, năng
+                    động, sáng tạo và chuyên nghiệp. Họ luôn sẵn sàng hỗ trợ khách hàng trong suốt quá trình chuẩn bị
+                    cho ngày cưới. Sự tận tâm, nhiệt tình của nhân viên sẽ giúp bạn yên tâm và hài lòng với ngày trọng
+                    đại của cuộc đời.</p>
+            </div>
+        </section>
+    <footer class="bg-white pt-16 pb-8">
+        <div class="container mx-auto px-4 text-center">
+            <img alt="Logo Hà Vy Wedding" class="h-20 mx-auto mb-4" src="img/logo.jpg" />
+            <h3 class="text-2xl font-bold text-pink-800 mb-4">Những người kể chuyện tình</h3>
+            <div class="text-gray-600 space-y-2 mb-8">
+                <p class="flex items-center justify-center"><span
+                        class="material-icons text-pink-600 mr-2">location_on</span>136 Nguyễn Văn Cừ, Pleiku, Gia Lai
+                </p>
+                <p class="flex items-center justify-center"><span
+                        class="material-icons text-pink-600 mr-2">email</span>havyweddingdecor@gmail.com</p>
+                <p class="flex items-center justify-center"><span
+                        class="material-icons text-pink-600 mr-2">phone</span>0367275002 (Ms. Hà)</p>
+            </div>
+            <div class="flex justify-center space-x-4 mb-8">
+                <a class="text-pink-600" href="https://www.facebook.com/caipirafelizz?locale=vi_VN"><img
+                        alt="Facebook icon" class="h-8" src="img/icon/facebook.jpg" /></a>
+                <a class="text-pink-600" href="https://zalo.me/0367275002"><img alt="Zalo icon" class="h-8"
+                        src="img/icon/zalo.jpg" /></a>
+                <a class="text-pink-600" href="https://m.me/caipirafelizz
+"><img alt="Messenger icon" class="h-8" src="img/icon/messenger.jpg" /></a>
+            </div>
+            <div class="mb-8">
+                <a class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full inline-flex items-center transition duration-300"
+                    href="#">
+                    <span class="material-icons mr-2">phone</span>
+                    Gọi Điện Thoại
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm">Design by Hà Vy Wedding</p>
+        </div>
+    </footer>
+    <div class="fixed bottom-4 right-4 flex flex-col space-y-2">
+        <a href="https://zalo.me/0367275002" class="bg-white p-3 rounded-full shadow-lg">
+            <img alt="Zalo icon" src="img/icon/zalo.jpg" class="h-12 w-12 rounded-full object-cover" />
+        </a>
+        <a href="https://m.me/caipirafelizz
+" class="bg-white p-3 rounded-full shadow-lg">
+            <img alt="Messenger icon" src="img/icon/messenger.jpg" class="h-12 w-12 rounded-full object-cover" />
+        </a>
+    </div>    </main>
+</body>
+
+</html>
