@@ -66,36 +66,41 @@
             <button id="btnClose" class="absolute top-2 right-2 text-gray-600 text-3xl p-2">×</button>
             <nav class="flex flex-col p-4 space-y-4 pt-12">
                 <a href="/index.html" class="text-gray-800 hover:text-pink-600">Trang chủ</a>
-                 <div class="flex flex-col">
-    <button id="btnService"
-            class="flex items-center justify-between text-gray-800 hover:text-pink-600">
-      <span>Dịch vụ</span>
-      <span id="iconService" class="transform transition-transform duration-300">
-        <!-- Mũi tên trỏ xuống mặc định -->
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-        </svg>
-      </span>
-    </button>
-    <div id="submenuService" class="flex flex-col space-y-2 mt-2 pl-4 hidden">
-      <a href="/service/trangtrigiatien.html" class="text-gray-800 hover:text-pink-600">Trang trí gia tiên</a>
-      <a href="/service/trangtrinhahang.html" class="text-gray-800 hover:text-pink-600">Trang trí nhà hàng</a>
-      <a href="/service/trangtrisinhnhat.html" class="text-gray-800 hover:text-pink-600">Trang trí sinh nhật</a>
-      <a href="/service/mamdamngo.html" class="text-gray-800 hover:text-pink-600">Trang trí mâm dạm ngõ</a>
-      <a href="/service/mamqua.html" class="text-gray-800 hover:text-pink-600">Trang trí mâm quả</a>
-      <a href="/service/xeruocdau.html" class="text-gray-800 hover:text-pink-600">Trang trí xe hoa</a>
-      <a href="/service/rapcuoibetrap.html" class="text-gray-800 hover:text-pink-600">Rạp cưới - bê tráp</a>
-    </div>
-  </div>
+                <div class="flex flex-col">
+                    <button id="btnService" class="flex items-center justify-between text-gray-800 hover:text-pink-600">
+                        <span>Dịch vụ</span>
+                        <span id="iconService" class="transform transition-transform duration-300">
+                            <!-- Mũi tên trỏ xuống mặc định -->
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div id="submenuService" class="flex flex-col space-y-2 mt-2 pl-4 hidden">
+                        <a href="/service/trangtrigiatien.html" class="text-gray-800 hover:text-pink-600">Trang trí gia
+                            tiên</a>
+                        <a href="/service/trangtrinhahang.html" class="text-gray-800 hover:text-pink-600">Trang trí nhà
+                            hàng</a>
+                        <a href="/service/trangtrisinhnhat.html" class="text-gray-800 hover:text-pink-600">Trang trí
+                            sinh nhật</a>
+                        <a href="/service/mamdamngo.html" class="text-gray-800 hover:text-pink-600">Trang trí mâm dạm
+                            ngõ</a>
+                        <a href="/service/mamqua.html" class="text-gray-800 hover:text-pink-600">Trang trí mâm quả</a>
+                        <a href="/service/xeruocdau.html" class="text-gray-800 hover:text-pink-600">Trang trí xe hoa</a>
+                        <a href="/service/rapcuoibetrap.html" class="text-gray-800 hover:text-pink-600">Rạp cưới - bê
+                            tráp</a>
+                    </div>
+                </div>
                 <script>
-  document.getElementById('btnService').addEventListener('click', () => {
-    const submenu = document.getElementById('submenuService');
-    const icon = document.getElementById('iconService');
+                    document.getElementById('btnService').addEventListener('click', () => {
+                        const submenu = document.getElementById('submenuService');
+                        const icon = document.getElementById('iconService');
 
-    submenu.classList.toggle('hidden');              // Ẩn/hiện submenu
-    icon.classList.toggle('rotate-180');              // Xoay icon mũi tên
-  });
-</script>
+                        submenu.classList.toggle('hidden');              // Ẩn/hiện submenu
+                        icon.classList.toggle('rotate-180');              // Xoay icon mũi tên
+                    });
+                </script>
                 <a href="/contact.html" class="text-gray-800 hover:text-pink-600">Liên hệ</a>
                 <a href="/introduce.html" class="text-gray-800 hover:text-pink-600">Giới thiệu</a>
             </nav>
@@ -126,7 +131,7 @@
                     <p class="mb-6 max-w-md">Chúng tôi mang đến những dịch vụ cưới hỏi trọn gói, chuyên nghiệp và tận
                         tâm, giúp ngày trọng đại của bạn trở nên thật ý nghĩa.</p>
                     <a class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-6 rounded-full transition duration-300"
-                        href="#">TÌM HIỂU NGAY</a>
+                        href="introduce.html">TÌM HIỂU NGAY</a>
                 </div>
             </div>
         </section>
@@ -134,9 +139,9 @@
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <a class="block bg-pink-100 p-6 rounded-lg text-center text-pink-800 font-semibold text-lg hover:bg-pink-200 transition duration-300"
-                        href="#">100+ KHÁCH HÀNG</a>
+                        href="introduce.html">100+ KHÁCH HÀNG</a>
                     <a class="block bg-pink-100 p-6 rounded-lg text-center text-pink-800 font-semibold text-lg hover:bg-pink-200 transition duration-300"
-                        href="#">KHO MẪU TRANG TRÍ ĐA DẠNG</a>
+                        href="introduce.html">KHO MẪU TRANG TRÍ ĐA DẠNG</a>
                 </div>
             </div>
         </section>
@@ -168,7 +173,8 @@
                             src="img/category/category1.jpg" />
                         <div class="p-4 text-center">
                             <h3 class="font-semibold text-lg mb-2">Trang trí gia tiên</h3>
-                            <a class="text-pink-600 font-semibold hover:underline" href="service/trangtrigiatien.html">XEM THÊM</a>
+                            <a class="text-pink-600 font-semibold hover:underline"
+                                href="service/trangtrigiatien.html">XEM THÊM</a>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -176,7 +182,8 @@
                             src="img/category/category2.jpg" />
                         <div class="p-4 text-center">
                             <h3 class="font-semibold text-lg mb-2">Trang trí nhà hàng</h3>
-                            <a class="text-pink-600 font-semibold hover:underline" href="service/trangtrinhahang.html">XEM THÊM</a>
+                            <a class="text-pink-600 font-semibold hover:underline"
+                                href="service/trangtrinhahang.html">XEM THÊM</a>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -184,21 +191,24 @@
                             src="img/category/category3.jpg" />
                         <div class="p-4 text-center">
                             <h3 class="font-semibold text-lg mb-2">Trang trí sinh nhật</h3>
-                            <a class="text-pink-600 font-semibold hover:underline" href="service/trangtrisinhnhat.html">XEM THÊM</a>
+                            <a class="text-pink-600 font-semibold hover:underline"
+                                href="service/trangtrisinhnhat.html">XEM THÊM</a>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <img alt="Mâm dạm ngõ" class="w-full h-48 object-cover" src="img/category/category4.jpg" />
                         <div class="p-4 text-center">
                             <h3 class="font-semibold text-lg mb-2">Mâm dạm ngõ</h3>
-                            <a class="text-pink-600 font-semibold hover:underline" href="service/mamdamngo.html">XEM THÊM</a>
+                            <a class="text-pink-600 font-semibold hover:underline" href="service/mamdamngo.html">XEM
+                                THÊM</a>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <img alt="Mâm quả" class="w-full h-48 object-cover" src="img/category/category5.jpg" />
                         <div class="p-4 text-center">
                             <h3 class="font-semibold text-lg mb-2">Mâm quả</h3>
-                            <a class="text-pink-600 font-semibold hover:underline" href="service/mamqua.html">XEM THÊM</a>
+                            <a class="text-pink-600 font-semibold hover:underline" href="service/mamqua.html">XEM
+                                THÊM</a>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -206,14 +216,16 @@
                             src="img/category/category6.jpg" />
                         <div class="p-4 text-center">
                             <h3 class="font-semibold text-lg mb-2">Rạp cưới - Bê tráp</h3>
-                            <a class="text-pink-600 font-semibold hover:underline" href="service/rapcuoibetrap.html">XEM THÊM</a>
+                            <a class="text-pink-600 font-semibold hover:underline" href="service/rapcuoibetrap.html">XEM
+                                THÊM</a>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <img alt="Xe rước dâu" class="w-full h-48 object-cover" src="img/category/category7.jpg" />
                         <div class="p-4 text-center">
                             <h3 class="font-semibold text-lg mb-2">Xe rước dâu</h3>
-                            <a class="text-pink-600 font-semibold hover:underline" href="service/xeruocdau.html">XEM THÊM</a>
+                            <a class="text-pink-600 font-semibold hover:underline" href="service/xeruocdau.html">XEM
+                                THÊM</a>
                         </div>
                     </div>
                 </div>
@@ -234,93 +246,98 @@
                             chuyện tình yêu của bạn. Hãy để chúng tôi biến giấc mơ về một đám cưới cổ tích của bạn thành
                             hiện thực, tạo nên những khoảnh khắc đáng nhớ mãi mãi trong cuộc đời.</p>
                         <a class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full transition duration-300"
-                            href="#">XEM THÊM</a>
+                            href="introduce.html">XEM THÊM</a>
                     </div>
                 </div>
             </div>
         </section>
-<section class="py-16 bg-pink-100">
-  <div class="container mx-auto px-4 text-center">
-    <div id="review-carousel" class="relative max-w-2xl mx-auto p-6 border rounded shadow">
-      
-      <!-- Container sao -->
-      <div id="review-stars" class="flex justify-center mb-4"></div>
-      
-      <!-- Nội dung đánh giá -->
-      <p id="review-text" class="text-gray-700 italic text-lg mb-6 overflow-hidden"></p>
-      
-      <!-- Tác giả và nút -->
-      <div class="flex items-center justify-between">
-        <button id="prev-btn" class="text-pink-600"><span class="material-icons">arrow_back_ios</span></button>
-        <span id="review-author" class="font-semibold text-pink-800"></span>
-        <button id="next-btn" class="text-pink-600"><span class="material-icons">arrow_forward_ios</span></button>
-      </div>
-    </div>
-  </div>
-</section>
+        <section class="py-16 bg-pink-100">
+            <div class="container mx-auto px-4 text-center">
+                <div id="review-carousel" class="relative max-w-2xl mx-auto p-6 border rounded shadow">
 
-<script>
-  // Danh sách đánh giá với số sao
-  const reviews = [
-    { text: "Mình thật sự rất ấn tượng với dịch vụ của Hoa Cầu Wedding. Mọi thứ được chuẩn bị chu đáo và chuyên nghiệp.", author: "Yến Vi", stars: 5 },
-    { text: "Dịch vụ tuyệt vời, đội ngũ nhiệt tình và sáng tạo. Lễ cưới của chúng mình trở nên đáng nhớ.", author: "Hồng Nhung", stars: 4 },
-    { text: "Trang trí đẹp mắt và chuyên nghiệp, mọi người khách đều khen ngợi.", author: "Minh Tú", stars: 5 },
-    { text: "Một trải nghiệm tuyệt vời. Chúng tôi rất hài lòng với cách chuẩn bị và trang trí.", author: "Lan Anh", stars: 4 }
-  ];
+                    <!-- Container sao -->
+                    <div id="review-stars" class="flex justify-center mb-4"></div>
 
-  let currentIndex = 0;
+                    <!-- Nội dung đánh giá -->
+                    <p id="review-text" class="text-gray-700 italic text-lg mb-6 overflow-hidden"></p>
 
-  function showReview(index) {
-    const review = reviews[index];
+                    <!-- Tác giả và nút -->
+                    <div class="flex items-center justify-between">
+                        <button id="prev-btn" class="text-pink-600"><span
+                                class="material-icons">arrow_back_ios</span></button>
+                        <span id="review-author" class="font-semibold text-pink-800"></span>
+                        <button id="next-btn" class="text-pink-600"><span
+                                class="material-icons">arrow_forward_ios</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    const reviewTextEl = document.getElementById('review-text');
-    const authorEl = document.getElementById('review-author');
-    const starsEl = document.getElementById('review-stars');
+        <script>
+            // Danh sách đánh giá với số sao
+            const reviews = [
+                { text: "Mình thật sự rất ấn tượng với dịch vụ của Hoa Cầu Wedding. Mọi thứ được chuẩn bị chu đáo và chuyên nghiệp.", author: "Yến Vi", stars: 5 },
+                { text: "Dịch vụ tuyệt vời, đội ngũ nhiệt tình và sáng tạo. Lễ cưới của chúng mình trở nên đáng nhớ.", author: "Hồng Nhung", stars: 4 },
+                { text: "Trang trí đẹp mắt và chuyên nghiệp, mọi người khách đều khen ngợi.", author: "Minh Tú", stars: 5 },
+                { text: "Một trải nghiệm tuyệt vời. Chúng tôi rất hài lòng với cách chuẩn bị và trang trí.", author: "Lan Anh", stars: 4 }
+            ];
 
-    // Cập nhật text và author
-    reviewTextEl.textContent = review.text;
-    authorEl.textContent = review.author;
+            let currentIndex = 0;
 
-    // Cập nhật sao
-    starsEl.innerHTML = '';
-    for (let i = 0; i < 5; i++) {
-      const star = document.createElement('span');
-      star.className = 'material-icons ' + (i < review.stars ? 'text-yellow-400' : 'text-gray-300');
-      star.textContent = 'star';
-      starsEl.appendChild(star);
-    }
-  }
+            function showReview(index) {
+                const review = reviews[index];
 
-  // Hiển thị đánh giá đầu tiên
-  showReview(currentIndex);
+                const reviewTextEl = document.getElementById('review-text');
+                const authorEl = document.getElementById('review-author');
+                const starsEl = document.getElementById('review-stars');
 
-  // Nút trước
-  document.getElementById('prev-btn').addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
-    showReview(currentIndex);
-  });
+                // Cập nhật text và author
+                reviewTextEl.textContent = review.text;
+                authorEl.textContent = review.author;
 
-  // Nút sau
-  document.getElementById('next-btn').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % reviews.length;
-    showReview(currentIndex);
-  });
-</script>
+                // Cập nhật sao
+                starsEl.innerHTML = '';
+                for (let i = 0; i < 5; i++) {
+                    const star = document.createElement('span');
+                    star.className = 'material-icons ' + (i < review.stars ? 'text-yellow-400' : 'text-gray-300');
+                    star.textContent = 'star';
+                    starsEl.appendChild(star);
+                }
+            }
 
-<style>
-  #review-text {
-    min-height: 5.5em; /* chiều cao cố định cho 3-4 dòng */
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* giới hạn 3 dòng */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+            // Hiển thị đánh giá đầu tiên
+            showReview(currentIndex);
 
-  #review-stars {
-    min-height: 1.5em; /* tránh nhảy layout khi số sao khác nhau */
-  }
-</style>
+            // Nút trước
+            document.getElementById('prev-btn').addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
+                showReview(currentIndex);
+            });
+
+            // Nút sau
+            document.getElementById('next-btn').addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % reviews.length;
+                showReview(currentIndex);
+            });
+        </script>
+
+        <style>
+            #review-text {
+                min-height: 5.5em;
+                /* chiều cao cố định cho 3-4 dòng */
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                /* giới hạn 3 dòng */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            #review-stars {
+                min-height: 1.5em;
+                /* tránh nhảy layout khi số sao khác nhau */
+            }
+        </style>
 
     </main>
     <footer class="bg-white pt-16 pb-8">
@@ -346,11 +363,12 @@
             </div>
             <div class="mb-8">
                 <a class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full inline-flex items-center transition duration-300"
-                    href="#">
+                    href="tel:0367275002">
                     <span class="material-icons mr-2">phone</span>
                     Gọi Điện Thoại
                 </a>
             </div>
+
             <p class="text-gray-500 text-sm">Design by Hà Vy Wedding</p>
         </div>
     </footer>
